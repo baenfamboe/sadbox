@@ -1,1 +1,16 @@
-test
+let newElem = document.createElement("script");
+newElem.setAttribute("type", "module");
+newElem.innerHTML = `
+    import { Octokit, App } from "https://esm.sh/octokit";
+
+    const octokit = new Octokit({
+        auth: "TOKEN"
+    });
+
+    let test = await octokit.request("PUT /repos/baenfamboe/sadbox/contents/content/test.txt", {
+        content: btoa("test"),
+        message: "for testing"
+    });
+    console.log(test);
+`
+document.querySelector('#header').prepend(newElem);
