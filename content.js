@@ -1,4 +1,4 @@
-let data = []/*END*/;
+let data=[]/*END*/;
 for (object of data) {
             let post = document.createElement('article');
             post.innerHTML = `
