@@ -5,7 +5,7 @@ let data=[{"time":"2023-07-11T14:58:56.000Z","id":"10456227","title":"Доста
                 <header>
                     <div> ${object.author} </div>
                     <div>
-                        <time> ${new Date(object.time)} </time>  <!--${time.getDate()}.${time.getMonth()+1}.${time.getFullYear()}-->
+                        <time> ${new Date(object.time)} </time>  <!--{time.getDate()}.{time.getMonth()+1}.{time.getFullYear()}-->
                     </div>
                     <div> ${object.community ? object.community : ''} </div>
                     <div>
