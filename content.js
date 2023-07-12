@@ -8,7 +8,7 @@ let data=[{"time":"2023-07-11T14:58:56.000Z","id":"10456227","title":"Доста
                     </div>
                     <div>
                         <time>
-                            ${object.time.getDate()}.${time.getMonth()+1}.${time.getFullYear()}
+                            ${object.time.getDate()}.${object.time.getMonth()+1}.${object.time.getFullYear()}
                         </time>
                     </div>
                     <div>
