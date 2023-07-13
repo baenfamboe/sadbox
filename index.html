@@ -74,7 +74,7 @@
 								<h2> ${object.title} </h2>
 							</header>
 							<section>
-								<div> ${object.content.join('\n')} </div>
+								${object.content.join('\n')}
 							</section>`;
 						document.querySelector('main').append(post);
 					}
